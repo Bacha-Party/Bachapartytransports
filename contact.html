@@ -1,16 +1,30 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ✅ Meta Setup -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us | BachaPartyTransport</title>
+    <meta
+      name="description"
+      content="Get in touch with BachaPartyTransport. Contact us via email, phone, or WhatsApp for bookings, questions, and support."
+    />
+
+    <!-- ✅ Favicon -->
     <link rel="shortcut icon" href="/images/LOGO.jpg" type="image/x-icon" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7372657345450883"
-     crossorigin="anonymous"></script>
+
+    <!-- ✅ Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ✅ Google AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7372657345450883"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!-- ✅ Header -->
     <header>
       <div class="navbar">
         <div class="logo-brand">
@@ -18,62 +32,89 @@
             src="images/LOGO.jpg"
             alt="BachaPartyTransport Logo"
             class="logo-img"
+            width="60"
+            height="60"
           />
           <h1 class="logo-text">BachaPartyTransport</h1>
         </div>
-        <nav>
+        <nav aria-label="Main Navigation">
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html" aria-current="page">Contact</a>
         </nav>
       </div>
     </header>
 
-    <section class="contact-section">
-      <div class="contact-form-container">
-        <form
-          action="https://formspree.io/f/xrbkekap"
-          method="POST"
-          class="contact-form"
-        >
-          <!-- ✅ Add name attributes -->
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            required
-          ></textarea>
+    <!-- ✅ Main Content -->
+    <main>
+      <section class="contact-section">
+        <!-- ✅ Contact Form -->
+        <div class="contact-form-container">
+          <h2>Send Us a Message</h2>
+          <form
+            action="https://formspree.io/f/xrbkekap"
+            method="POST"
+            class="contact-form"
+            aria-label="Contact Form"
+          >
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name" required />
 
-          <!-- Optional: disable CAPTCHA -->
-          <input type="hidden" name="_captcha" value="false" />
+            <label for="email">Your Email</label>
+            <input id="email" type="email" name="email" required />
 
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-      <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p>Email: bachapartytransport@gmail.com</p>
-        <p>Phone: +92 300 1234567</p>
-      </div>
-    </section>
+            <!-- Optional: disable CAPTCHA -->
+            <input type="hidden" name="_captcha" value="false" />
 
-    <button id="goTop">&#8679;</button>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
 
-    <a href="https://wa.me/923212283763" class="whatsapp-icon">
-      <img src="images/whatsapp.jpg" alt="WhatsApp" />
+        <!-- ✅ Contact Info -->
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <p>
+            📧 Email:
+            <a href="mailto:bachapartytransport@gmail.com"
+              >bachapartytransport@gmail.com</a
+            >
+          </p>
+          <p>📞 Phone: <a href="tel:+923001234567">+92 300 1234567</a></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ✅ Go To Top Button -->
+    <button id="goTop" aria-label="Scroll to top">&#8679;</button>
+
+    <!-- ✅ WhatsApp Icon -->
+    <a
+      href="https://wa.me/923212283763"
+      class="whatsapp-icon"
+      aria-label="Chat on WhatsApp"
+    >
+      <img
+        src="images/whatsapp.jpg"
+        alt="WhatsApp Icon"
+        width="50"
+        height="50"
+        loading="lazy"
+      />
     </a>
 
+    <!-- ✅ Footer -->
     <footer>
-  <p>&copy; 2025 BachaPartyTransport</p>
-  <p>
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms & Conditions</a>
-  </p>
-</footer>
+      <p>&copy; 2025 BachaPartyTransport</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms & Conditions</a>
+      </p>
+    </footer>
 
-    
+    <!-- ✅ Scripts -->
     <script src="script.js"></script>
   </body>
 </html>
